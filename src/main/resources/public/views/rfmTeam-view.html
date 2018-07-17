@@ -1,0 +1,51 @@
+<div class="container pad-top">
+  <table class="table rfmTeamtable">
+      <tr>
+          <td><h3>Details for {{rfmTeam.firstName}} {{rfmTeam.lastName}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Employee No.</td>
+          <td>{{rfmTeam.empNo}}</td>
+      </tr>
+      <tr>
+          <td>BirthDate</td>
+          <td>{{rfmTeam.birthDate}}</td>
+      </tr>
+      <tr>
+          <td>First Name</td>
+          <td>{{rfmTeam.firstName}}</td>
+      </tr>
+      <tr>
+          <td>Last Name</td>
+          <td>{{rfmTeam.lastName}}</td>
+      </tr>
+      <tr>
+          <td>Gender</td>
+          <td>{{rfmTeam.gendEr}}</td>
+      </tr>
+      <tr>
+          <td>Qualification</td>
+          <td>{{rfmTeam.qualifiCation}}</td>
+      </tr>
+      <tr>
+          <td>Total Experience</td>
+          <td>{{rfmTeam.currentExperience}}</td>
+      </tr>
+        <tr>
+          <td>Designation</td>
+          <td>{{rfmTeam.desigNation}}</td>
+      </tr>
+      <tr>
+          <td>Skills</td>
+          <td>{{rfmTeam.sKills}}</td>
+      </tr>
+       <tr>
+          <td>SelfRatings</td>
+          <td>{{rfmTeam.selfRatings}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editRfmTeam({id:rfmTeam.id})">Edit</a>
+  </div>
+</div>

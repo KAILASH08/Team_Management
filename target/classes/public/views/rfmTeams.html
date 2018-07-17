@@ -1,0 +1,32 @@
+<!-- 
+ * 
+ * @author Kailash Nirmal
+ */
+  -->
+<br>
+<br>
+<div class="container">
+<div class="container pad-top">
+  <a ui-sref="newRfmTeam" class="btn-primary btn-lg nodecoration">Add New Team Member</a>
+ 
+  <table class="table shipwrecktable">
+      <tr>
+          <td><h3>All Members</h3></td>
+          <td></td>
+      </tr>
+      <tr ng-repeat="rfmTeam in rfmTeams">
+          <td>{{rfmTeam.firstName}},{{rfmTeam.lastName}}</td>
+          <td>{{rfmTeam.desigNation}}</td>
+          <td>{{rfmTeam.selfRatings}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewRfmTeam({id:rfmTeam.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deleteRfmTeam(rfmTeam)">Delete</a>
+          </td>
+      </tr>
+  </table>
+  <hr>
+   <footer style="position: fixed; bottom: 0;color: white;left: 0;width:100%;background:black;">
+        <p>Copyright &copy; 2018 Capgemini-Vanguard McDonald's&trade; India. All Rights Reserved </p>
+      </footer>
+      </div>
+</div>
